@@ -17,5 +17,5 @@ touch nginx/key.pem
 touch nginx/cert.pem
 acme.sh --install-cert -d *.plasmaeye.duckdns.org --key-file /home/pi/nginx/key.pem --fullchain-file /home/pi/nginx/cert.pem --reloadcmd "service nginx force-reload"
 ```
-add `ssl_certificate /home/pi/nginx/cert.pem` to nginx conf
-add `ssl_certificate_key /home/pi/nginx/key.pem` to nginx conf
+- add `ssl_certificate /home/pi/nginx/cert.pem` to nginx conf
+- add `ssl_certificate_key /home/pi/nginx/key.pem` to nginx conf
