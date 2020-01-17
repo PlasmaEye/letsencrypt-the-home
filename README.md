@@ -11,7 +11,7 @@ Simple setup of LetsEncrypt certificates for any services running out of your ho
 sudo apt update && sudo apt upgrade -y && sudo apt install nginx -y
 curl https://get.acme.sh | sh
 export DuckDNS_Token="aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-acme.sh --issue --dns dns_duckdns -d '*.[YOUR DOMAIN].duckdns.org' (try, add --insecure if it doesn't work)
+acme.sh --issue --dns dns_duckdns -d '*.[YOUR DOMAIN].duckdns.org' 
 mkdir nginx
 touch nginx/key.pem
 touch nginx/cert.pem
